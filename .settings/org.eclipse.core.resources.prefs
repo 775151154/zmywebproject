@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//config/log4j.properties=UTF-8
+encoding//config/redis.properties=UTF-8
+encoding//src/com/leo/test/LeoWsdlTest.java=UTF-8
