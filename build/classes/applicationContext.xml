@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/util 
+        http://www.springframework.org/schema/util/spring-util-4.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        "
+        xmlns:util="http://www.springframework.org/schema/util"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:context="http://www.springframework.org/schema/context"    
+        >
+        
+	<!--防止SpringMVC和SpringIOC对同一个对象的管理重合 -->
+    <context:component-scan base-package="com.leo">
+        <context:exclude-filter type="annotation" 
+            expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="annotation" 
+            expression="org.springframework.web.bind.annotation.ControllerAdvice"/>        
+    </context:component-scan>
+    
+	<!--redis配置 -->
+    <context:property-placeholder location="classpath:redis.properties" /> 
+    <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+    	<property name="maxTotal" value="${redis.maxTotal}" />
+    	<property name="maxIdle" value="${redis.maxIdle}" />
+        <property name="maxWaitMillis" value="${redis.maxWaitMillis}"></property>
+        <property name="testOnBorrow" value="${redis.testOnBorrow}" />
+        <property name="testOnReturn" value="${redis.testOnReturn}"/>
+        <!-- <property name="testWhileIdle" value="true"/> -->
+    </bean>
+	<!--分片式redis连接池，可以连接有主备的redis服务端 -->
+    <bean id="shardedJedisPool" class="redis.clients.jedis.ShardedJedisPool"  scope="singleton">
+        <constructor-arg index="0" ref="jedisPoolConfig" />
+        <constructor-arg index="1">
+            <list>
+                <bean class="redis.clients.jedis.JedisShardInfo">
+					<constructor-arg index="0" value="${redis.host}" />
+			        <constructor-arg index="1" value="${redis.port}" type="int"/> 
+<!-- 			        <property name="password" value="${redis.pass}" /> -->
+                </bean>
+            </list>
+        </constructor-arg>
+    </bean>
+</beans>

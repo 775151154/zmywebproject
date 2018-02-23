@@ -10,13 +10,13 @@ import com.leo.mypro.service.impl.LoginServiceImpl;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
-	
-	@Autowired
-	private LoginServiceImpl loginService;
-	
-	@RequestMapping("/doformlogin")
-	public String doFormLogin(){
-		loginService.doLoginTest();
-		return "helloword";
-	}
+
+    @Autowired
+    private LoginServiceImpl loginService;
+
+    @RequestMapping("/doformlogin")
+    public String doFormLogin() {
+        loginService.doLoginTest();
+        return "helloword";
+    }
 }
