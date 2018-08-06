@@ -10,6 +10,7 @@ import java.util.concurrent.TimeoutException;
 
 /**
  * 利用线程池控制方法执行时间
+ *
  * @author leo
  */
 public class TestFurther {
@@ -20,7 +21,7 @@ public class TestFurther {
             public Boolean call() throws Exception {
                 System.out.println("不告诉你。");
                 Thread.sleep(1000 * 3);
-                return false;
+                return Boolean.FALSE;
             }
         });
 

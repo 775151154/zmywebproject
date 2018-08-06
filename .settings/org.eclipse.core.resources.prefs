@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/jsp/extwords.jsp=UTF-8
+encoding//config/dataSource.properties=UTF-8
 encoding//config/log4j.properties=UTF-8
+encoding//config/platformconfig.properties=UTF-8
 encoding//config/redis.properties=UTF-8
 encoding//src/com/leo/test/LeoWsdlTest.java=UTF-8

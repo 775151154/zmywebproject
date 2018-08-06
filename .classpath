@@ -2,11 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="config"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre7">
-		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v7.0">
 		<attributes>
 			<attribute name="owner.project.facets" value="jst.web"/>
@@ -40,5 +35,48 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-jdbc-4.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/spring-test-4.0.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/httpclient-4.5.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/elasticsearch-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/elasticsearch-cli-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/elasticsearch-core-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/elasticsearch-launchers-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/HdrHistogram-2.1.9.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/hppc-0.7.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jackson-core-2.8.10.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jackson-dataformat-cbor-2.8.10.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jackson-dataformat-smile-2.8.10.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jackson-dataformat-yaml-2.8.10.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jna-4.5.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/joda-time-2.9.9.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jopt-simple-5.0.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/jts-1.13.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/log4j-1.2-api-2.9.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/log4j-api-2.9.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/log4j-core-2.9.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-analyzers-common-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-backward-codecs-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-core-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-grouping-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-highlighter-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-join-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-memory-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-misc-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-queries-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-queryparser-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-sandbox-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-spatial-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-spatial-extras-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-spatial3d-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/lucene-suggest-7.2.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/plugin-classloader-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/plugin-cli-6.2.4.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/securesm-1.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/snakeyaml-1.17.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/spatial4j-0.6.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/t-digest-3.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/aaa/x-pack-core-6.2.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

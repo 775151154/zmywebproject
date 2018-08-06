@@ -11,7 +11,7 @@ public class HelloWordController {
 	
 	@RequestMapping("/hello")
 	public String Hello(){
-		int i = 5/0;
+//		int i = 5/0;
 		return "helloword";
 	}
 	
